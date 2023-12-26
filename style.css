@@ -1,0 +1,23 @@
+
+.mobile_menu_bar:before{
+   content: " ";
+    font-size: 32px;
+    position: relative;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.menu-item a {
+    font-weight: 300;
+}
+
+.current-menu-item a {
+  font-weight: 700;
+}
+
+.about-div {
+  background-size: contain;
+  background-position: center top;
+  background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-12.png),linear-gradient(180deg,#eef9ff 0%,#ffffff 100%)!important;
+}
