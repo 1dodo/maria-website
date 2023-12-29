@@ -12,38 +12,39 @@
     rel="stylesheet" />
     <title>Document</title>
 </head>
-<body class="bg-sky-200">
+<body class="bg-sky-200 min-h-screen">
     <!-- https://dribbble.com/shots/15392711-Dashboard-Login-Sign-Up/-->
   
    
-<div class="login-container">
-  <div class="wrapper">
-    <div class="title-text">
-       <div class="title login">
-          Login Form
-       </div>
-       <div class="title signup">
-          Signup Form
-       </div>
+<div class="login-container md:h-full max-w-5xl mx-auto" >
+  <div class="wrapper min-h-screen md:h-full flex justify-center items-center">
+  <div>
+    <div class="">
+      <a href="/">
+      <div class="w-full text-center flex justify-center items-center">
+        <img src="https://data-buddy.com/wp-content/uploads/2020/04/Data-Buddy-logo.svg"/>
+      </div>
+    </a>
     </div>
     <div class="form-container">
+      
       <div>
-       <div class="slide-controls">
+      <div class="max-w-xl mx-auto">
+       
+        <div class="slide-controls">
           <input type="radio" name="slide" id="login" checked>
           <input type="radio" name="slide" id="signup">
           <label for="login" class="slide login">Login</label>
           <label for="signup" class="slide signup">Signup</label>
           <div class="slider-tab"></div>
        </div>
+      
+      </div>
        <div class="form-inner">
           <form action="#" class="login">
-            <div class="login-form w-full">
+            <div class="login-form w-full max-w-2xl mx-auto">
          
-              <div class="logo"><svg height="512" viewBox="0 0 192 192" width="512" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m155.109 74.028a4 4 0 0 0 -3.48-2.028h-52.4l8.785-67.123a4.023 4.023 0 0 0 -7.373-2.614l-63.724 111.642a4 4 0 0 0 3.407 6.095h51.617l-6.962 67.224a4.024 4.024 0 0 0 7.411 2.461l62.671-111.63a4 4 0 0 0 .048-4.027z" />
-                </svg></div>
-              <h1>Login</h1>
-              <p class="body-text">See your growth and get consulting support!</p>
+        
         
               <a href="#" class="rounded-button google-login-button">
                 <span class="google-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -83,7 +84,8 @@
         
           </div>
           </form>
-          <form action="#" class="signup">
+          <form action="#" class="signup ">
+            <div class="max-w-xl mx-auto">
              <div class="field">
                 <input type="text" placeholder="Email Address" required>
              </div>
@@ -97,63 +99,21 @@
                 <div class="btn-layer"></div>
                 <input type="submit" value="Signup">
              </div>
+            </div>
           </form>
        </div>
     </div>
   </div>
+</div>
  </div>
 
 
 
-    <div class="onboarding">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide color-1">
-            <div class="slide-image">
-              <img src="https://raw.githubusercontent.com/ismailvtl/ismailvtl.github.io/master/images/startup-launch.png" loading="lazy" alt="" />
-            </div>
-            <div class="slide-content">
-              <h2>Turn your ideas into reality.</h2>
-              <p>Consistent quality and eperience across all platform and devices</p>
-            </div>
-          </div>
-          <div class="swiper-slide color-1">
-            <div class="slide-image">
-              <img src="https://raw.githubusercontent.com/ismailvtl/ismailvtl.github.io/master/images/cloud-storage.png" loading="lazy" alt="" />
-            </div>
-            <div class="slide-content">
-              <h2>Turn your ideas into reality.</h2>
-              <p>Consistent quality and eperience across all platform and devices</p>
-            </div>
-          </div>
-  
-          <div class="swiper-slide color-1">
-            <div class="slide-image">
-              <img src="https://raw.githubusercontent.com/ismailvtl/ismailvtl.github.io/master/images/cloud-storage.png" loading="lazy" alt="" />
-            </div>
-            <div class="slide-content">
-              <h2>Turn your ideas into reality.</h2>
-              <p>Consistent quality and eperience across all platform and devices</p>
-            </div>
-          </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.0/js/swiper.min.js"></script>
 <script>
-    var swiper = new Swiper(".swiper-container", {
-    pagination: ".swiper-pagination",
-    paginationClickable: true,
-    parallax: true,
-    speed: 600,
-    autoplay: 3500,
-    loop: true,
-    grabCursor: true
-  });
+
      const loginText = document.querySelector(".title-text .login");
          const loginForm = document.querySelector("form.login");
          const loginBtn = document.querySelector("label.login");
